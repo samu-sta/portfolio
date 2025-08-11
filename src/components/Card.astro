@@ -1,0 +1,33 @@
+---
+import '@/styles/global.css';
+
+interface CardProps {
+  title: string;
+  icon: string;
+  svgIcon?: string;
+  style?: string;
+}
+
+const { 
+  title = '', 
+  icon = '📰',
+  svgIcon,
+  style
+} = Astro.props;
+
+---
+
+<article class="bg-gray-800 p-6 rounded-lg shadow-lg w-full" style={style}>
+  <header class="flex items-center justify-between mb-4">
+    <h2 class="text-lg font-bold">{title}</h2>
+    {svgIcon ? (
+        <div class="w-6 h-6 fill-current text-white" set:html={svgIcon}></div>
+      ) : (
+        <span>{icon}</span>
+      )}
+  </header>
+  <main>
+    <slot />
+  </main>
+
+</article>
