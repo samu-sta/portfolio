@@ -4,13 +4,12 @@ import '@/styles/global.css';
 const navItems = [
   { href: '#about', label: 'Acerca de' },
   { href: '#experience', label: 'Experiencia' },
-  { href: '#projects', label: 'Proyectos' },
-  { href: '#contact', label: 'Contacto' }
+  { href: '#projects', label: 'Proyectos' }
 ];
 
 ---
+<header class="flex flex-col sticky top-0 z-50 flex justify-center pt-2 mb-20 shadow-lg shadow-[#2A0E61]/50 bg-[#03001417] backdrop-blur-md z-50 px-10">
 
-<header class="sticky top-0 z-50 flex justify-center pt-4">
   <nav class="nav-content px-8 py-3 rounded-2xl transition-all duration-300 ease-in-out">
     <ul class="flex justify-center gap-10 list-none m-0 p-0">
       {navItems.map(({ href, label }) => (
@@ -24,4 +23,3 @@ const navItems = [
   </nav>
 </header>
 
-<script src="/src/animations/header.ts"/>

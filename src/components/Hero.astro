@@ -4,7 +4,7 @@ import Card from './Card.astro';
 import { heroCards } from '@/config/heroCards.ts';
 ---
 
-<main class="grid grid-cols-5 grid-rows-6 gap-3 p-5 w-[920px] h-full">
+<main class="grid grid-cols-5 grid-rows-6 gap-3 p-5 w-[1000px] h-[800px]">
   {heroCards.map((card) => (
     <Card 
       title={card.title}
@@ -14,4 +14,5 @@ import { heroCards } from '@/config/heroCards.ts';
       {card.content && <p>{card.content}</p>}
     </Card>
   ))}
+
 </main>

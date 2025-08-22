@@ -7,7 +7,6 @@ Portafolio bento construido con Astro.
 - Layout base: [src/layouts/Layout.astro](src/layouts/Layout.astro)
 - Componentes: [src/components/Header.astro](src/components/Header.astro), [src/components/Footer.astro](src/components/Footer.astro)
 - Estilos globales: [src/styles/global.css](src/styles/global.css)
-- Animaciones: [src/animations/header.ts](src/animations/header.ts)
 - Configuración: [astro.config.mjs](astro.config.mjs), [package.json](package.json)
 
 ## 🛠️ Desarrollo
@@ -33,8 +32,6 @@ pnpm preview
 ├── public/
 │   └── favicon.svg
 ├── src/
-│   ├── animations/
-│   │   └── header.ts
 │   ├── assets/
 │   ├── components/
 │   │   ├── Footer.astro
