@@ -1,18 +1,22 @@
 ---
 import '@/styles/global.css';
 import Card from './Card.astro';
-import { heroCards } from '@/config/heroCards.ts';
+import ProfileCard from './cards/ProfileCard.astro';
 ---
 
-<main class="grid grid-cols-5 grid-rows-6 gap-3 p-5 w-[1000px] h-[800px]">
-  {heroCards.map((card) => (
-    <Card 
-      title={card.title}
-      svgIcon={card.svgIcon}
-      style={card.style}
-    >
-      {card.content && <p>{card.content}</p>}
-    </Card>
-  ))}
+<main class="grid grid-cols-6 grid-rows-4 gap-3 p-5 w-[1100px] h-[720px]">
+  <Card class="col-start-1 col-end-4 row-start-1 row-end-4">
+    <ProfileCard />
+  </Card>
+  <Card class="col-start-4 col-end-7 row-start-1 row-end-2"/>
+  <Card class="col-start-4 col-end-5 row-start-2 row-end-4"/>
+  <Card class="col-start-5 col-end-6 row-start-2 row-end-3"/>
+  <Card class="col-start-6 col-end-7 row-start-2 row-end-3"/>
+  <Card class="col-start-5 col-end-6 row-start-3 row-end-4"/>
+  <Card class="col-start-6 col-end-7 row-start-3 row-end-4"/>
+  <Card class="col-start-4 col-end-7 row-start-4 row-end-5"/>
+  <Card class="col-start-3 col-end-4 row-start-4 row-end-5"/>
+  <Card class="col-start-1 col-end-3 row-start-4 row-end-5"/>
+
 
 </main>
